@@ -33,8 +33,8 @@ Make sure matrices/ is empty each time you run it. You can take a look at the co
 
 It then extracts
 
-1. **regular target-context pairs** for each time bin (for alignment) and
-2. **temporarily referenced target-context pairs** (target\_year)
+1. **regular word-context pairs** for each time bin (for alignment) and
+2. **temporarily referenced word-context pairs** for specified target words (target\_year)
 
 with corpus_processing/extract-pairs.py. Then it creates basic matrices for PPMI and SGNS using the scripts under hyperwords/ and aligns the time-binned matrices with the scripts under alignment/. Finally, it extracts cosine distances (displacement) for each pair of adjacent time bins and nearest neighbors for each time bin to results/ using the scripts under measures/. The script measures/displacement.py needs a different input for each model: for the alignment models it takes the file testsets/test/testset-pairs.csv in the following format:
 
