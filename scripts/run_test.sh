@@ -1,19 +1,18 @@
 #!/bin/sh
 
-
-
 ### PARAMETERS ### 
-declare -a corpus=corpora/test/testcorpus.gz # path to gzipped corpus
+declare -a corpus=corpora/test/testcorpus.gz # path to gzipped corpus, should not contain any hyphens or underscores
 corpusshort=$(basename "${corpus%.*}")
 declare -a freqfile=corpora/test/freqs-testcorpus.csv # path to file with frequencies of all words in corpus, create the file with corpus_processing/get_freqs.py
 declare -a freqthr=1.0 # minimum frequency threshold below which words will be ignored
 declare -a win=5 # window size for all models
-declare -a bounds=(1920 1930 1940) # time bins for which a representation will be learned
+declare -a bounds=(1920 1930 1940) # time bins for which a representation will be learned, in equal steps
+declare -a step=10 # difference in years between each adjacent pair of bounds
 declare -a firstbound=1920 # first time bin
 declare -a lastbound=1940 # last time bin
 declare -a testset=testsets/test/testset-pairs.csv # testset with targets for alignment models
-declare -a trtestsets=(testsets/test/testset-1920-1930-pairs.csv testsets/test/testset-1930-1940-pairs.csv) # testset with targets for temporal referencing models (special format)
-declare -a dummytestset=testsets/test/dummy_testset.csv # a dummy testset containing senseless strings that don't occur in the corpus (to extract regular pairs)
+declare -a trtestsets=(testsets/test/testset-1920-1930-pairs.csv testsets/test/testset-1930-1940-pairs.csv) # testset with targets for temporal referencing models (special format), must contain '-year1-year2-pairs' right in front of file suffix and cannot contain any other hyphens
+declare -a dummytestset=testsets/test/dummy_testset.csv # a dummy testset containing senseless strings that do not occur in the corpus (to extract regular pairs)
 
 
 ### EXTRACT PAIRS ###
@@ -106,7 +105,7 @@ do
 	year2="$(cut -d'-' -f2 <<<"$dirname2")"
 	d=$(( $year2 - $year1 ))
 	
-	if [[ ! $dirname1 =~ "_tr-" ]] && [[ ! $dirname2 =~ "_tr-" ]] && [ $d == 10 ];
+	if [[ ! $dirname1 =~ "_tr-" ]] && [[ ! $dirname2 =~ "_tr-" ]] && [ $d == $step ];
 	then
 	    
 	    python3 -u alignment/map_embeddings.py --normalize unit center --init_identical --orthogonal $file2 $file1 $outfolder/target_"${dirname2}"_map_to_"${dirname1}".w2v $outfolder/source_"${dirname2}"_map_to_"${dirname1}".w2v
@@ -136,7 +135,7 @@ do
 	year2="$(cut -d'-' -f2 <<<"$dirname2")"
 	d=$(( $year2 - $year1 ))
 	
-	if [[ ! $dirname1 =~ "_tr-" ]] && [[ ! $dirname2 =~ "_tr-" ]] && [ $d == 10 ];
+	if [[ ! $dirname1 =~ "_tr-" ]] && [[ ! $dirname2 =~ "_tr-" ]] && [ $d == $step ];
 	then
 	    
 	    # PPMI alignment	
@@ -153,9 +152,6 @@ do
 	fi		    
     done
 done
-
-
-
 
 ### MAKE TR RESULTS ###
 
