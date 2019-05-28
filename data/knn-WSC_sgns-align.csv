@@ -1,0 +1,352 @@
+aeroplane_1920	aeroplane_1930	aeroplane_1940	aeroplane_1950	aeroplane_1960	aeroplane_1970	
+powered	cockpit	beame	maximus	fedor	kato	
+airship	hangar	additive	moneyman	moving-picture	corinne	
+amphibian	dinghy	halevy	jeter	budlong	lue	
+airplanes	taxied	stewardesses	marconi	silvester	dishpan	
+curtiss	iceberg	cathode	sanger	carboy	johnstone	
+airplane	glides	bosch	tempe	stryker	croupier	
+anti-aircraft	runway	haber	swale	cyprian	gayety	
+rocket	chug	compounding	spurlock	noo	claypool	
+rockford	plunger	finitude	lavery	agassi	bobolink	
+
+automobile_1920	automobile_1930	automobile_1940	automobile_1950	automobile_1960	automobile_1970	
+auto	auto	auto	auto	auto	auto	
+car	motor	airplane	car	automobiles	autos	
+motor	automobiles	automobiles	cars	car	automobiles	
+sedan	buick	car	automobiles	truck	automotive	
+truck	pontiac	motor	motor	chevrolet	cars	
+taxicab	car	packard	autos	cars	volkswagen	
+automobiles	airplane	appliance	airplane	outboard	taxicab	
+horse-drawn	foundry	buick	truck	vans	motorist	
+ambulance	chevrolet	chrysler	chevrolet	foundry	rolls-royce	
+
+bank_1920	bank_1930	bank_1940	bank_1950	bank_1960	bank_1970	
+banks	banks	banks	banks	banks	banks	
+cashier	depositors	deposit	export-import	export-import	calhoun	
+federally	deposits	export-import	loan	loan	loan	
+discount	export-import	depositors	deposit	deposit	export-import	
+loans	deposit	deposits	securities	depositors	gaza	
+depositors	rediscount	cashing	deposits	mortgage	fargo	
+discounts	kinsey	loans	post-office	loans	deposits	
+guaranty	reserve	savings	mortgage	deposits	guaranty	
+deposits	banking	dividend	cashier	savings	deposit	
+
+camera_1920	camera_1930	camera_1940	camera_1950	camera_1960	camera_1970	
+sht	pans	pans	pans	dollies	dollies	
+tilts	panning	exiting	dollies	panning	pans	
+heise	laspary	panning	reacts	pans	panning	
+kelly	mullin	dollies	vandamm	projector	closeup	
+bt	mcs	dinah	exiting	photographing	zoom	
+kali	dollies	ms	mcs	speedboat	hector	
+moves	mls	exits	nora	bergdorf	cameraman	
+coughdrops	fg	cs	cs	corneal	cameras	
+sneaks	tomazo	mls	ms	tripod	lorry	
+
+car_1920	car_1930	car_1940	car_1950	car_1960	car_1970	
+cars	cab	cars	cars	cars	cars	
+automobile	taxi	parked	parked	cadillac	cadillac	
+cab	parked	cab	truck	coupe	pickup	
+roadster	cars	coupe	sedan	truck	mercedes	
+motor	limousine	taxi	limousine	parked	motorcycle	
+taxi	sedan	buick	cadillac	sedan	hearse	
+taxicab	roadster	hearse	cab	roadster	truck	
+sedan	chauffeur	garage	garage	limousine	driveway	
+truck	coupe	sedan	jaguar	driveway	bike	
+
+cinema_1920	cinema_1930	cinema_1940	cinema_1950	cinema_1960	cinema_1970	
+wagnerian	movie	revue	barrie	carney	cabaret	
+metro-goldwyn-mayer	hollywood	nightclub	metro-goldwyn-mayer	gorky	conservatory	
+vaudeville	motion-picture	soloist	mgm	concerts	juilliard	
+theatres	rko	vaudeville	ziegfeld	nightclubs	exhibitions	
+ziegfeld	metro-goldwyn-mayer	lewisohn	nouveau	studios	ziegfeld	
+movie	loew	ballet	kraft	juilliard	city-wide	
+motion-picture	vaudeville	crosby	faye	repertory	avant-garde	
+zita	repertory	philharmonic	patti	faust	gorky	
+cinemactress	technicolor	burlesque	shakespearean	shostakovich	louvre	
+
+computer_1920	computer_1930	computer_1940	computer_1950	computer_1960	computer_1970	
+jory	deferment	coexistence	calculator	computers	computers	
+suture	interact	paperwork	computers	ibm	computerized	
+sst	additive	backlash	gadget	computerized	electronics	
+spartacus	wundt	ventral	electronic	electronic	electronic	
+smeed	bleu	halevy	movable	electronically	data	
+mano	perimeter	input	ibm	feedback	circuits	
+dmitri	dna	beame	recorders	computation	wiring	
+norval	semen	hydrolysis	transistor	monitoring	harlie	
+atty	expertise	antibiotic	tapes	experimenter	fingerprint	
+
+cool_1920	cool_1930	cool_1940	cool_1950	cool_1960	cool_1970	
+warm	windless	warm	warm	warm	warm	
+windless	warm	chilly	sunshine	moist	windless	
+breezes	chilly	moist	chilly	cold	quiet	
+deliciously	fragrant	balmy	refreshing	quiet	self-possessed	
+balmy	autumnal	cold	breezes	humid	humid	
+moist	breezes	quiet	restful	cloudy	invigorating	
+chilly	cold	damp	limpid	cooler	chilly	
+soapy	refreshing	invigorating	moist	windless	damp	
+cloudy	restful	sultry	windless	tepid	sultry	
+
+deer_1920	deer_1930	deer_1940	deer_1950	deer_1960	deer_1970	
+fowl	quail	antelope	antelope	elk	moose	
+antelope	elk	elk	boar	antelope	pheasants	
+zebra	panther	boar	rabbits	hares	antelope	
+caribou	squirrel	squirrel	caribou	grizzly	caribou	
+antlers	boar	squirrels	turkeys	wolves	grouse	
+rhinoceros	covey	turkeys	grizzly	reindeer	trout	
+rabbit	zebra	coyote	ducks	geese	squirrels	
+dodger	geese	quail	quail	squirrels	elk	
+quail	coyote	grizzly	pheasants	caribou	boar	
+
+export_1920	export_1930	export_1940	export_1950	export_1960	export_1970	
+exporting	imports	exports	exports	exports	exports	
+exports	exports	imports	imports	exporters	imports	
+currencies	importers	import	importers	imports	import	
+importations	importation	exporters	exporters	exporting	tariffs	
+imports	exporting	importers	quotas	importer	importers	
+shipments	importations	exporting	import	foodstuffs	textiles	
+refiners	exporters	exporter	manufactures	importers	refiners	
+livestock	import	resale	foodstuffs	inflow	cartels	
+overproduction	prohibitive	importing	shipments	surpluses	domestically	
+
+flight_1920	flight_1930	flight_1940	flight_1950	flight_1960	flight_1970	
+non-stop	nonstop	flights	flights	flights	flights	
+flights	flights	flying	nonstop	plane	plane	
+nonstop	non-stop	landing	non-stop	orbital	landing	
+transatlantic	trip	helicopter	airliner	airliner	airliner	
+take-off	voyage	takeoff	hangar	gemini	eastbound	
+journey	take-off	plane	landing	takeoff	takeoff	
+monoplane	ascent	runway	constellation	landing	runway	
+voyage	refueling	lifeboat	glider	manned	fly	
+plane	flying	nonstop	orbiting	hijacked	landings	
+
+founder_1920	founder_1930	founder_1940	founder_1950	founder_1960	founder_1970	
+halley	scion	friedrich	emeritus	mahatma	garvey	
+curator	crocker	originator	guggenheim	parr	secretary-treasurer	
+emeritus	juilliard	auguste	multimillionaire	gompers	giorgio	
+isidore	palmerston	scion	doran	kellogg	philanthropist	
+socialite	emeritus	gwynne	ochs	aurelius	holman	
+rensselaer	bok	emeritus	phipps	apostle	rosenwald	
+noyes	cyrus	sutherland	theologian	greeley	michaels	
+founders	secretary-treasurer	asher	vicar	garvin	rossi	
+alonzo	buhl	socialite	alva	bevan	plummer	
+
+gay_1920	gay_1930	gay_1940	gay_1950	gay_1960	gay_1970	
+festive	light-hearted	lighthearted	carefree	vibrant	lesbian	
+pastel	radiantly	chic	gowned	joyous	vivacious	
+carefree	ravishing	brassy	cheerful	vivacious	vivian	
+organdy	gaiety	cosy	boisterous	carefree	cockney	
+light-hearted	amanda	homey	charmingly	grays	cheery	
+decorous	happy-go-lucky	lascivious	ravishing	cheerful	cheerful	
+breezy	companionable	cheerful	saucy	radiantly	feminist	
+chiffon	vivacious	bawdy	languid	polka	uproariously	
+dark-blue	lovely	bright	polka	debutante	brunette	
+
+horse_1920	horse_1930	horse_1940	horse_1950	horse_1960	horse_1970	
+horses	mare	horses	stallion	horses	horses	
+mare	horses	pony	horses	pony	pony	
+pony	pony	stallion	mare	mule	mare	
+pinto	sorrel	mule	saddle	stallion	dismounted	
+halter	stallion	mare	pony	buggy	saddle	
+stopper	saddle	gelding	barb	possum	stallion	
+stallion	mule	saddle	mares	saddle	gelding	
+saddled	hoss	rider	blooded	pinto	thoroughbred	
+bridle	bridle	burro	filly	colt	ponies	
+
+mail_1920	mail_1930	mail_1940	mail_1950	mail_1960	mail_1970	
+mall	catalogues	airmail	circulars	third-class	airmail	
+mails	mails	telegrams	telegrams	luggage	letters	
+passenger	postal	outgoing	mailing	airmail	third-class	
+steamship	packages	parcels	parcels	teletype	envelopes	
+airways	passenger	second-class	envelopes	envelopes	postage	
+second-class	circulars	mailed	postal	telegrams	luggage	
+third-class	mailing	mails	stationery	long-distance	memos	
+boeing	invoice	newsstand	memos	postal	directories	
+telegraph	packet	postage	postcards	coupon	signatures	
+
+memory_1920	memory_1930	memory_1940	memory_1950	memory_1960	memory_1970	
+memories	memories	recollections	memories	recollections	memories	
+recollection	vividness	memories	recollection	memories	recollection	
+recollections	remembrance	recollection	bereavement	childhood	remembrance	
+remembrance	recollection	longings	poignancy	recollection	camillo	
+poignant	imaginings	yearnings	imaginings	remembrance	subconscious	
+retina	nostalgia	vividness	unbelief	daydreams	mortification	
+boyhood	stabs	imaginings	lucidity	virginity	felicity	
+fane	haunting	reminiscence	wretchedness	transfigured	recollections	
+imaginings	recollections	poignant	reminiscence	recollected	recurring	
+
+mirror_1920	mirror_1930	mirror_1940	mirror_1950	mirror_1960	mirror_1970	
+dressing-table	dresser	dressing-table	perseus	keyhole	dressing-table	
+dresser	dressing-table	dresser	mantel	porthole	full-length	
+easel	easel	wristwatch	dressing-table	nightdress	keyhole	
+mantelpiece	profile	nook	lamplight	dressing-table	bathroom	
+balustrade	mantelpiece	rocking-chair	crayon	peephole	peephole	
+shutter	rocking-chair	locket	living-room	bookcase	convex	
+drape	nightdress	half-light	full-length	periscope	mantel	
+parasol	somberly	eyepiece	louvre	bathroom	undressing	
+lens	washstand	window	reflection	silhouette	appraisingly	
+
+mouse_1920	mouse_1930	mouse_1940	mouse_1950	mouse_1960	mouse_1970	
+meadow	mickey	squirrel	rat	puppy	rattler	
+mole	possum	jackass	weasel	walrus	weasel	
+blackbird	kitten	slut	woodpecker	mongrel	rat	
+proudfoot	dolphin	wop	jackal	toad	poodle	
+squirrel	rabbit	fiend	rabbit	jackal	frog	
+rabbit	frog	gorilla	toad	twig	lizard	
+pussy	terrier	ape	bantam	woodpecker	bloomers	
+kitten	rattler	coyote	gopher	pigeon	woodsman	
+cat	woodchuck	hyena	skunk	smuggler	squirrel	
+
+music_1920	music_1930	music_1940	music_1950	music_1960	music_1970	
+symphonies	jazz	tunes	melody	tunes	musical	
+tunes	verdi	melody	mozart	mozart	synagogue	
+orchestra	wagnerian	mendelssohn	symphonic	brahms	choral	
+melodies	orchestral	jazz	jazz	jazz	melody	
+violin	bach	musical	songs	quartet	song	
+brahms	symphonic	brahms	tunes	flute	singing	
+flute	orchestra	haydn	handel	bach	melodies	
+chime	clarinet	mozart	bach	concerto	mozart	
+handel	musical	beethoven	choral	guitar	jazz	
+
+newspaper_1920	newspaper_1930	newspaper_1940	newspaper_1950	newspaper_1960	newspaper_1970	
+newspapers	tabloid	newspapers	newspapers	newspapers	newspapers	
+tabloid	newspapers	magazine	papers	magazine	front-page	
+scripps-howard	magazine	clippings	headline	headlined	full-page	
+front-page	press	full-page	editors	tabloid	headlined	
+magazine	herald	syndicated	syndicated	pravda	magazine	
+periodical	tribune	headline	full-page	front-page	tabloid	
+ledger	syndicated	ads	scripps-howard	full-page	izvestia	
+obituary	full-page	tabloid	magazine	trib	gazette	
+gazette	editing	pm	front-page	izvestia	pravda	
+
+paper_1920	paper_1930	paper_1940	paper_1950	paper_1960	paper_1970	
+sheet	papers	ink	papers	sheet	ink	
+pad	pad	papers	pencil	tablet	stationery	
+papers	sheet	sheet	clippings	stationery	mimeographed	
+blotter	tablet	blotter	stationery	typewritten	typewritten	
+envelope	cardboard	sheets	pad	pencil	folder	
+envelopes	folder	printing	parchment	napkins	notebook	
+pencil	notebook	wrapping	cardboard	folder	cardboard	
+typed	typewritten	typewritten	newspaper	folders	sheet	
+booklet	envelope	banknotes	sheet	looseleaf	scrawled	
+
+phone_1920	phone_1930	phone_1940	phone_1950	phone_1960	phone_1970	
+telephone	telephone	telephone	telephone	telephone	telephone	
+buzzer	receiver	dialed	dialing	dialed	dialed	
+photo	phones	dialing	dialed	doorbell	dialing	
+crandall	dialing	receiver	switchboard	unlisted	switchboard	
+keenan	dialed	dials	receiver	intercom	phones	
+telegraph	hickey	buzzer	nelly	dialing	intercom	
+kellog	durkin	teletype	intercom	booth	receiver	
+lydia	doorbell	booth	booth	dials	dial	
+phoned	switchboard	doorbell	phones	switchboard	dials	
+
+racism_1920	racism_1930	racism_1940	racism_1950	racism_1960	racism_1970	
+georgi	naturalism	jewry	apartheid	bigotry	
+luftwaffe	apartheid	hinduism	bigotry	apartheid	
+ben-hur	stereotypes	hegemony	racist	colonialism	
+cease-fire	morphology	activist	radicalism	racist	
+bhutan	linguistics	ayatollah	fanaticism	genocide	
+cb	talleyrand	effete	backlash	polarization	
+emmerich	methodology	bolshevist	infringement	collectivism	
+dissidents	backlash	venizelos	colonialism	nazism	
+finkel	durkheim	muslims	lawlessness	oppression	
+
+record_1920	record_1930	record_1940	record_1950	record_1960	record_1970	
+records	records	records	records	records	records	
+facsimile	all-time	graph	alltime	alltime	all-time	
+dow-jones	recorded	all-time	all-time	almanac	compiled	
+three-month	docket	compilation	mph	coast-to-coast	alltime	
+tn	tabulation	alltime	seven-day	all-time	m-g-m	
+compilation	olympic	tabulation	major-league	best-seller	albums	
+ten-day	precedent	subscription	record-breaking	compilation	stereo	
+showings	metres	prediction	victrola	record-breaking	scoring	
+ari	owens	upswing	debacle	compile	mettle	
+
+rock_1920	rock_1930	rock_1940	rock_1950	rock_1960	rock_1970	
+ledge	ledges	rocks	cliffs	boulder	overhang	
+rocks	escarpment	sand	granite	crag	waterfall	
+cliff	limestone	boulder	cliff	stones	boulders	
+crag	rocks	clod	rocks	granite	shelving	
+rubble	cliffs	ledge	boulder	rocks	shingle	
+sandstone	lava	pinnacle	nah	sand	crags	
+rocky	rocky	sycamore	glacier	ledge	hewn	
+precipice	breakwater	crag	slab	overhung	promontory	
+slab	craggy	precipice	limestone	limestone	cypress	
+
+ship_1920	ship_1930	ship_1940	ship_1950	ship_1960	ship_1970	
+ships	ships	vessel	ships	ships	ships	
+boat	vessel	boat	spaceship	vessel	vessel	
+vessel	boat	ships	vessel	boat	boat	
+sloop	freighter	schooner	boat	plumie	freighter	
+steamer	steamer	destroyer	barge	spaceship	schooner	
+liner	liner	warship	destroyer	lifeboat	sloop	
+cargo	clipper	sloop	schooner	liner	sail	
+frigate	starboard	cargo	freighter	tanker	cargo	
+schooner	ertak	liner	lifeboat	destroyer	boats	
+
+symptom_1920	symptom_1930	symptom_1940	symptom_1950	symptom_1960	symptom_1970	
+deafness	neurosis	psychosis	trauma	symptomatic	complication	
+immaturity	hallucination	dementia	neurosis	manifestation	peculiarity	
+deformity	schizophrenia	alcoholism	psychosomatic	manifesting	abnormality	
+psychosis	manifestation	trauma	congenital	neurosis	psychosis	
+hallucination	symptomatic	senility	psychosis	overstatement	manifestation	
+virulent	malady	phobia	infidelity	lamentable	cerebral	
+sterility	perversion	malady	schizophrenia	alescence	by-product	
+oddity	incongruity	neurosis	incompatibility	autocracy	epilepsy	
+variant	premeditated	abnormality	incurable	mitigated	debilitating	
+
+tank_1920	tank_1930	tank_1940	tank_1950	tank_1960	tank_1970	
+petrol	tanks	tanks	tanks	tanks	silo	
+tanks	hoses	motorized	bulldozer	carburetor	kerosene	
+paraffin	cask	panzer	fuselage	suction	projectiles	
+refrigerator	carburetor	armored	lifeboat	condenser	tanks	
+gasoline	girders	jeeps	torpedo	boiler	heater	
+heater	vats	machine-guns	radiator	chlorine	powered	
+leaking	axle	infantry	gliders	chassis	hydraulic	
+chassis	condenser	chassis	turbine	pump	anti-aircraft	
+refill	ballast	powered	spout	valve	outboard	
+
+tape_1920	tape_1930	tape_1940	tape_1950	tape_1960	tape_1970	
+adhesive	adhesive	adhesive	recorders	recorders	recorder	
+ticker	blotting	gauze	adhesive	recorder	recorders	
+confetti	frayed	crayon	reels	video	recordings	
+clips	twine	strap	tapes	audio	tapes	
+showcase	cardboard	ribbon	recorder	tapes	stereo	
+thongs	ticker	shank	masking	ticker	recording	
+twine	clips	spool	teletype	taped	taped	
+lint	gauze	twine	clips	transmitter	adhesive	
+blueprints	invisibly	squaring	calculator	phonograph	nous	
+
+telephone_1920	telephone_1930	telephone_1940	telephone_1950	telephone_1960	telephone_1970	
+phone	phone	phone	phone	phone	phone	
+telegraph	telegraph	dialed	dialing	dialed	dialed	
+telephones	receiver	switchboard	telegraph	unlisted	switchboard	
+wireless	phones	telephones	long-distance	telephones	telegraph	
+long-distance	long-distance	long-distance	dialed	telegraph	dialing	
+receiver	switchboard	directory	telephones	long-distance	long-distance	
+directories	telephones	dialing	switchboard	dialing	intercom	
+buzzer	dialed	telegraph	intercom	directory	phones	
+phones	telegraphic	operator	bell	teletype	dial	
+
+train_1920	train_1930	train_1940	train_1950	train_1960	train_1970	
+trains	bus	trains	trains	bus	bus	
+siding	trains	streetcar	bus	subway	trains	
+steamer	tram	westbound	westbound	trolley	subway	
+car	streetcar	bus	eastbound	trains	streetcar	
+eastbound	depot	eastbound	car	depot	freight	
+southbound	car	stagecoach	trolley	shuttle	bike	
+westbound	eastbound	southbound	motorman	westbound	southbound	
+station	southbound	car	cab	ferry	caw	
+freight	cherbourg	freight	subway	taxi	greyhound	
+
+travel_1920	travel_1930	travel_1940	travel_1950	travel_1960	travel_1970	
+traveling	traveling	traveling	traveling	traveling	traveling	
+trudge	traveled	traveled	traveled	travels	travelers	
+travels	travelling	ride	sight-seeing	traveled	travelling	
+travelled	travels	cruises	navigate	trips	trips	
+ramble	journeying	trips	round-trip	travelers	round-trip	
+journey	trails	intrastate	cruise	travelled	traveled	
+travelling	traverse	traverse	excursion	round-trip	fares	
+traveled	travelled	fares	commuting	journeys	travels	
+ride	trips	overland	hiking	trip	third-class	
+

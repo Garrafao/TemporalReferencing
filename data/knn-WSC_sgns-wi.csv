@@ -1,0 +1,352 @@
+aeroplane_1920	aeroplane_1930	aeroplane_1940	aeroplane_1950	aeroplane_1960	aeroplane_1970	
+airplane	taxied	computer_1930	aeroplane_1960	aeroplane_1970	computer_1920	
+aircraft	copter	computer_1940	aeroplane_1970	computer_1920	computer_1930	
+curtiss	airplane	aeroplane_1970	aeroplane_1920	aeroplane_1950	aeroplane_1960	
+aeroplane_1960	hangar	computer_1920	computer_1930	computer_1930	racism_1930	
+aeroplane_1950	chopper	racism_1930	airplane	racism_1930	computer_1940	
+outboard	aeroplane_1920	aeroplane_1960	computer_1920	computer_1940	aeroplane_1940	
+airplanes	ramp	obsolescent	bluebird	aeroplane_1920	the	
+fokker	plane	racism_1940	singin	aeroplane_1940	aeroplane_1950	
+corvette	airstrip	racism_1950	song	airplane	racism_1940	
+
+automobile_1920	automobile_1930	automobile_1940	automobile_1950	automobile_1960	automobile_1970	
+automobile_1930	automobile_1920	automobile_1950	automobile_1940	automobile_1950	automobile_1950	
+automobile_1950	automobile_1940	automobile_1930	automobile_1930	automobile_1940	automobile_1960	
+automobile_1940	automobile_1950	automobile_1960	automobile_1960	automobile_1930	auto	
+automobile_1960	auto	auto	auto	automobile_1970	automobile_1940	
+car_1920	automobile_1960	automobile_1920	automobile_1970	automobile_1920	automobile_1930	
+auto	automobile_1970	automobile_1970	automobile_1920	auto	automobile_1920	
+car_1930	motor	motor	car_1970	motor	motor	
+car_1950	automobiles	car_1960	motor	car_1960	automobiles	
+automobiles	car_1920	automobiles	car_1950	car_1950	airplane	
+
+bank_1920	bank_1930	bank_1940	bank_1950	bank_1960	bank_1970	
+bank_1930	bank_1920	bank_1930	bank_1960	bank_1950	bank_1960	
+bank_1940	bank_1940	bank_1920	bank_1940	bank_1970	bank_1950	
+bank_1950	bank_1950	bank_1950	bank_1930	bank_1940	bank_1940	
+bank_1960	bank_1960	bank_1960	bank_1920	bank_1930	bank_1930	
+bank_1970	banks	bank_1970	bank_1970	bank_1920	bank_1920	
+banks	bank_1970	banks	banks	banks	banks	
+deposit	depositors	deposit	export-import	export-import	export-import	
+depositors	export-import	export-import	deposit	deposit	deposits	
+rediscount	loan	deposits	deposits	deposits	savings	
+
+camera_1920	camera_1930	camera_1940	camera_1950	camera_1960	camera_1970	
+camera_1940	camera_1940	camera_1930	pans	camera_1970	camera_1960	
+camera_1930	pans	camera_1950	camera_1940	camera_1940	camera_1940	
+camera_1950	camera_1950	pans	camera_1930	camera_1930	camera_1950	
+dollies	dollies	camera_1960	mcs	dollies	zoom	
+camera_1960	camera_1920	dollies	vandamm	panning	dollies	
+sht	bg	panning	mls	camera_1950	camera_1930	
+camera_1970	cs	camera_1920	thornhill	camera_1920	projector	
+cu	fg	camera_1970	cs	projector	camera_1920	
+heise	mcs	exiting	exiting	bergdorf	panning	
+
+car_1920	car_1930	car_1940	car_1950	car_1960	car_1970	
+car_1930	car_1920	car_1950	car_1970	car_1970	car_1960	
+car_1940	car_1950	car_1930	car_1960	car_1950	car_1950	
+car_1950	car_1940	car_1960	car_1930	car_1940	car_1940	
+car_1960	car_1960	car_1970	car_1940	car_1930	car_1930	
+automobile_1920	car_1970	car_1920	car_1920	cadillac	cadillac	
+car_1970	roadster	cadillac	cadillac	car_1920	car_1920	
+roadster	cadillac	truck	cars	limousine	truck	
+cars	cars	cars	limousine	truck	cab	
+carriage	automobile_1920	cab	roadster	cars	bike	
+
+cinema_1920	cinema_1930	cinema_1940	cinema_1950	cinema_1960	cinema_1970	
+cinema_1930	cinema_1920	cinema_1950	cinema_1940	theater	cinema_1960	
+movie	movie	hollywood	movie	cinema_1970	theater	
+motion-picture	motion-picture	movie	impresario	theatre	cinema_1950	
+moving-picture	cinema_1950	musicals	comedians	cinema_1930	caf	
+cinema_1950	hollywood	motion-picture	cinema_1930	movies	theaters	
+metro-goldwyn-mayer	film	cinema_1930	hollywood	cinema_1950	theatre	
+film	cinema_1960	theater	cinema_1920	studios	nightclubs	
+films	moving-picture	vaudeville	valentino	avant-garde	drama	
+hollywood	theater	entertainer	burlesque	ballets	movie	
+
+computer_1920	computer_1930	computer_1940	computer_1950	computer_1960	computer_1970	
+computer_1930	computer_1920	computer_1930	computer_1960	computer_1970	computer_1960	
+aeroplane_1970	computer_1940	computer_1920	computer_1970	computers	computers	
+computer_1940	aeroplane_1970	aeroplane_1970	calculator	computer_1950	computer_1950	
+racism_1930	racism_1930	racism_1930	electronically	computerized	computerized	
+racism_1940	aeroplane_1940	aeroplane_1940	electronic	electronic	electronic	
+aeroplane_1960	aeroplane_1960	aeroplane_1960	computers	ibm	calculator	
+racism_1950	racism_1940	racism_1940	feedback	calculator	feedback	
+aeroplane_1940	the	prototypes	gadget	feedback	ibm	
+the	cation	small-scale	computerized	electronically	electronically	
+
+cool_1920	cool_1930	cool_1940	cool_1950	cool_1960	cool_1970	
+cool_1930	cool_1920	cool_1930	cool_1930	cool_1970	cool_1960	
+cool_1940	cool_1940	cool_1950	cool_1960	cool_1950	cool_1950	
+cool_1950	cool_1950	cool_1960	cool_1940	cool_1940	cool_1930	
+cool_1960	cool_1960	cool_1920	cool_1970	cool_1930	cool_1940	
+cool_1970	cool_1970	cool_1970	cool_1920	cool_1920	cool_1920	
+warm	warm	warm	warm	warm	warm	
+balmy	cold	quiet	chilly	chilly	quiet	
+breezes	quiet	chilly	cold	cold	chilly	
+quiet	moist	cold	quiet	quiet	damp	
+
+deer_1920	deer_1930	deer_1940	deer_1950	deer_1960	deer_1970	
+deer_1930	deer_1940	deer_1950	deer_1940	deer_1970	deer_1940	
+deer_1950	deer_1920	deer_1970	deer_1970	deer_1940	deer_1960	
+deer_1960	deer_1950	deer_1960	deer_1960	deer_1950	deer_1950	
+deer_1970	deer_1960	deer_1930	pheasants	deer_1930	deer_1920	
+deer_1940	deer_1970	deer_1920	deer_1930	deer_1920	deer_1930	
+boar	grizzly	caribou	deer_1920	pheasants	bison	
+grizzly	pheasants	boar	foxes	bison	antelope	
+pheasants	boar	antelope	boar	caribou	pheasants	
+caribou	caribou	grizzly	hares	grizzly	boar	
+
+export_1920	export_1930	export_1940	export_1950	export_1960	export_1970	
+export_1930	export_1920	export_1950	export_1940	export_1950	export_1960	
+exports	exports	export_1930	exports	export_1970	export_1950	
+export_1940	export_1940	exports	imports	export_1940	imports	
+imports	imports	export_1920	export_1960	exports	exports	
+export_1950	export_1950	export_1960	export_1930	imports	export_1940	
+importers	export_1970	imports	export_1970	export_1930	export_1930	
+exporters	exporters	export_1970	export_1920	importers	import	
+commodities	import	import	importers	exporters	export_1920	
+export_1970	importations	exporters	import	export_1920	importers	
+
+flight_1920	flight_1930	flight_1940	flight_1950	flight_1960	flight_1970	
+flight_1930	flight_1920	flight_1950	flight_1960	flight_1970	flight_1960	
+flight_1950	flight_1940	flight_1930	flight_1940	flight_1950	flight_1950	
+flight_1940	flight_1950	flight_1920	flight_1970	flight_1940	flights	
+flight_1960	flight_1960	flight_1960	flight_1930	flight_1930	flight_1930	
+flight_1970	flight_1970	flight_1970	flight_1920	flights	flight_1940	
+flights	flights	flights	flights	flight_1920	flight_1920	
+journey	non-stop	flying	non-stop	takeoff	plane	
+non-stop	journey	landing	airliner	gemini	takeoff	
+voyage	ascent	plane	plane	take-off	airliner	
+
+founder_1920	founder_1930	founder_1940	founder_1950	founder_1960	founder_1970	
+founder_1950	founder_1950	founder_1950	founder_1920	founder_1950	founder_1950	
+founder_1930	founder_1920	founder_1920	founder_1930	founder_1930	founder_1940	
+founder_1940	founder_1940	founder_1970	founder_1940	founder_1970	founder_1960	
+founder_1970	founder_1960	founder_1930	founder_1960	founder_1920	founder_1920	
+founder_1960	founder_1970	founder_1960	founder_1970	founder_1940	founder_1930	
+scion	emeritus	originator	emeritus	emeritus	originator	
+emeritus	rosenwald	emeritus	scion	originator	secretary-treasurer	
+originator	scion	scion	noyes	scion	noyes	
+founders	founders	birthplace	chauncey	founders	scion	
+
+gay_1920	gay_1930	gay_1940	gay_1950	gay_1960	gay_1970	
+gay_1950	gay_1950	gay_1950	gay_1920	gay_1950	gay_1950	
+gay_1960	gay_1920	gay_1920	gay_1940	gay_1920	gay_1960	
+gay_1940	gay_1960	gay_1960	gay_1960	gay_1940	gay_1920	
+gay_1930	gay_1940	gay_1930	gay_1930	gay_1930	gay_1940	
+merry	charming	merry	charming	bright	activists	
+charming	cheerful	cheerful	cheerful	gay_1970	gay_1930	
+cheerful	gay_1970	charmingly	lighthearted	cheerful	lighthearted	
+gaiety	gaiety	bright	gay_1970	charming	sexy	
+joyous	lighthearted	gay_1970	merry	lovely	rowdy	
+
+horse_1920	horse_1930	horse_1940	horse_1950	horse_1960	horse_1970	
+horse_1930	horse_1940	horse_1930	horse_1930	horse_1970	horse_1960	
+horse_1940	horse_1920	horse_1950	horse_1940	horse_1950	horse_1930	
+horse_1970	horse_1950	horse_1970	horse_1960	horse_1940	horse_1940	
+horse_1960	horse_1970	horse_1960	horse_1970	horse_1930	horse_1950	
+pony	horse_1960	horse_1920	horse_1920	horse_1920	horse_1920	
+horse_1950	mare	mare	mare	stallion	pony	
+horses	stallion	pony	stallion	horses	stallion	
+mare	horses	horses	horses	pony	horses	
+stallion	pony	sorrel	thoroughbred	mule	mare	
+
+mail_1920	mail_1930	mail_1940	mail_1950	mail_1960	mail_1970	
+mail_1930	mail_1960	mail_1950	mail_1940	mail_1950	mail_1960	
+mail_1940	mail_1920	mail_1960	mail_1960	mail_1970	mail_1950	
+mail_1950	mail_1940	mail_1930	mail_1970	mail_1940	mail_1940	
+mail_1960	mail_1950	mail_1920	mail_1930	mail_1930	mail_1930	
+mail_1970	mail_1970	mail_1970	mail_1920	mail_1920	mail_1920	
+airmail	airmail	airmail	airmail	mails	mails	
+steamship	mails	mails	circulars	airmail	letters	
+third-class	postal	parcels	mails	circulars	telegrams	
+baggage	freight	telegrams	letters	packages	circulars	
+
+memory_1920	memory_1930	memory_1940	memory_1950	memory_1960	memory_1970	
+memory_1930	memory_1920	memory_1930	memory_1940	memory_1950	memory_1960	
+memory_1940	memory_1940	memory_1950	memory_1930	memory_1940	memory_1950	
+memory_1950	memory_1950	memory_1920	memory_1960	memory_1970	memory_1940	
+memory_1960	memory_1960	memory_1960	memory_1970	memory_1930	memory_1930	
+memories	memories	memory_1970	memory_1920	memory_1920	memory_1920	
+memory_1970	memory_1970	memories	memories	memories	recollection	
+recollection	remembrance	recollection	recollection	recollection	memories	
+remembrance	recollection	recollections	recollections	recollections	recollections	
+recollections	recollections	remembrance	remembrance	remembrance	remembrance	
+
+mirror_1920	mirror_1930	mirror_1940	mirror_1950	mirror_1960	mirror_1970	
+mirror_1930	mirror_1950	mirror_1950	mirror_1940	mirror_1970	mirror_1960	
+mirror_1960	mirror_1940	mirror_1930	mirror_1960	mirror_1950	mirror_1950	
+mirror_1950	mirror_1960	mirror_1970	mirror_1930	mirror_1940	mirror_1940	
+mirror_1940	mirror_1920	mirror_1960	mirror_1970	mirror_1930	mirror_1930	
+mirror_1970	mirror_1970	mirror_1920	mirror_1920	mirror_1920	mirror_1920	
+dressing-table	dressing-table	dressing-table	mirrors	mirrors	mirrors	
+mirrors	mirrors	mirrors	dressing-table	dressing-table	dressing-table	
+dresser	washstand	washstand	mirrored	bathroom	mirrored	
+washstand	dresser	window	reflection	windshield	bathroom	
+
+mouse_1920	mouse_1930	mouse_1940	mouse_1950	mouse_1960	mouse_1970	
+cat	mouse_1960	mouse_1930	mouse_1960	mouse_1970	mouse_1960	
+mouse_1930	mouse_1970	mouse_1950	mouse_1940	mouse_1930	mouse_1930	
+proudfoot	mouse_1940	mouse_1960	rat	mouse_1950	mouse_1950	
+kitten	mouse_1950	mouse_1970	mouse_1930	mouse_1940	mouse_1940	
+woodchuck	cat	mouse_1920	mouse_1970	rat	rat	
+mouse_1940	kitten	rabbit	mice	cat	cat	
+dog	mouse_1920	cat	cat	cockroach	cockroach	
+chipmunk	rat	rat	mongrel	baboon	rabbit	
+pup	flea	lioness	mouse_1920	rabbit	flea	
+
+music_1920	music_1930	music_1940	music_1950	music_1960	music_1970	
+music_1950	music_1940	music_1950	music_1960	music_1950	music_1960	
+music_1930	music_1950	music_1930	music_1940	music_1970	music_1950	
+music_1940	music_1920	music_1960	music_1930	music_1940	music_1940	
+music_1960	music_1960	music_1970	music_1970	music_1930	music_1930	
+music_1970	music_1970	music_1920	music_1920	music_1920	music_1920	
+poetry	jazz	jazz	jazz	jazz	jazz	
+musical	orchestra	piano	musical	musical	musical	
+harpsichord	piano	singing	symphonic	songs	handel	
+orchestral	harpsichord	harpsichord	poetry	symphonic	songs	
+
+newspaper_1920	newspaper_1930	newspaper_1940	newspaper_1950	newspaper_1960	newspaper_1970	
+newspaper_1930	newspaper_1920	newspaper_1950	newspaper_1940	newspaper_1950	newspaper_1960	
+newspaper_1940	newspaper_1940	newspaper_1930	newspaper_1960	newspaper_1970	newspaper_1950	
+newspaper_1950	newspaper_1950	newspaper_1920	newspaper_1930	newspaper_1940	newspaper_1940	
+newspaper_1960	newspaper_1960	newspaper_1960	newspaper_1970	newspaper_1930	newspapers	
+newspaper_1970	newspapers	newspaper_1970	newspaper_1920	newspapers	newspaper_1930	
+newspapers	newspaper_1970	newspapers	newspapers	newspaper_1920	magazine	
+magazine	magazine	magazine	magazine	magazine	newspaper_1920	
+paper_1920	papers	papers	magazines	front-page	magazines	
+tabloid	scripps-howard	front-page	weeklies	paper_1950	paper_1950	
+
+paper_1920	paper_1930	paper_1940	paper_1950	paper_1960	paper_1970	
+paper_1930	paper_1920	paper_1950	paper_1960	paper_1950	paper_1960	
+paper_1940	paper_1940	paper_1930	paper_1940	paper_1970	paper_1950	
+paper_1950	paper_1950	paper_1920	paper_1970	paper_1940	paper_1940	
+paper_1960	paper_1960	paper_1960	paper_1930	paper_1930	paper_1930	
+paper_1970	paper_1970	paper_1970	paper_1920	paper_1920	paper_1920	
+papers	sheet	sheet	sheet	sheet	sheet	
+sheet	parchment	parchment	newspaper_1960	pencil	cardboard	
+envelope	envelope	cellophane	pencil	cardboard	newspaper_1970	
+newspaper_1920	pencil	ink	newspaper_1970	cellophane	pad	
+
+phone_1920	phone_1930	phone_1940	phone_1950	phone_1960	phone_1970	
+phone_1930	phone_1940	phone_1950	phone_1940	phone_1970	phone_1960	
+telephone_1930	phone_1950	phone_1930	phone_1960	phone_1950	telephone_1970	
+telephone_1920	phone_1960	phone_1960	phone_1970	phone_1940	phone_1950	
+phone_1940	phone_1920	phone_1970	phone_1930	telephone_1970	phone_1940	
+telephone_1940	telephone_1930	telephone_1940	telephone_1950	telephone_1960	telephone_1960	
+phone_1950	phone_1970	telephone_1950	telephone_1970	telephone_1950	telephone_1950	
+telephone_1950	telephone_1950	telephone_1930	telephone_1940	telephone_1940	telephone_1940	
+phone_1970	telephone_1940	telephone_1960	telephone_1960	phone_1930	phone_1930	
+telephone_1970	telephone_1970	telephone_1970	telephone_1930	telephone_1930	telephone_1930	
+
+racism_1920	racism_1930	racism_1940	racism_1950	racism_1960	racism_1970	
+computer_1920	racism_1930	racism_1940	racism_1970	racism_1960	
+aeroplane_1970	computer_1920	racism_1930	apartheid	bigotry	
+racism_1940	racism_1950	apartheid	bigotry	colonialism	
+computer_1930	computer_1930	fanaticism	racial	apartheid	
+computer_1940	computer_1940	computer_1920	racist	racial	
+aeroplane_1960	heresies	hinduism	backlash	racist	
+racism_1950	bigotry	endemic	racism_1950	communism	
+aeroplane_1940	aeroplane_1970	racism_1960	colonialism	racism_1950	
+the	backwardness	nationalism	communism	discrimination	
+
+record_1920	record_1930	record_1940	record_1950	record_1960	record_1970	
+record_1930	record_1920	record_1930	record_1960	record_1950	record_1960	
+record_1940	record_1940	record_1950	record_1940	record_1970	record_1950	
+record_1950	record_1950	record_1960	record_1970	record_1940	record_1940	
+record_1960	record_1960	record_1920	record_1930	record_1930	record_1930	
+record_1970	record_1970	record_1970	record_1920	record_1920	records	
+records	records	records	records	records	record_1920	
+compilation	all-time	alltime	alltime	alltime	all-time	
+alltime	alltime	all-time	all-time	all-time	alltime	
+recorded	recorded	recorded	recorded	recorded	recorded	
+
+rock_1920	rock_1930	rock_1940	rock_1950	rock_1960	rock_1970	
+rock_1930	rock_1940	rock_1930	rock_1960	rock_1950	rock_1960	
+rock_1940	rock_1920	rock_1920	rock_1930	rock_1940	rock_1930	
+rocks	rocks	rock_1960	rock_1940	rock_1930	rock_1940	
+rock_1960	rock_1960	rocks	rock_1970	rock_1970	rock_1950	
+ledge	rock_1950	rock_1950	rock_1920	rock_1920	rock_1920	
+cliff	cliffs	rock_1970	rocks	rocks	rocks	
+boulders	rock_1970	sandstone	cliff	granite	sand	
+cliffs	boulders	boulders	cliffs	limestone	rocky	
+rock_1950	sandstone	sand	granite	sandstone	escarpment	
+
+ship_1920	ship_1930	ship_1940	ship_1950	ship_1960	ship_1970	
+ship_1930	ship_1940	ship_1930	ship_1930	ship_1950	ship_1950	
+ship_1940	ship_1950	ship_1950	ship_1940	ship_1930	ship_1940	
+vessel	ship_1920	ship_1970	ship_1970	ship_1970	ship_1930	
+ship_1970	ship_1960	ship_1920	ship_1960	ship_1940	ship_1960	
+ship_1950	ship_1970	ship_1960	ship_1920	ship_1920	ship_1920	
+boat	vessel	vessel	vessel	vessel	vessel	
+ship_1960	boat	boat	boat	boat	boat	
+schooner	liner	ships	ships	freighter	schooner	
+ships	ships	freighter	spaceship	spaceship	sloop	
+
+symptom_1920	symptom_1930	symptom_1940	symptom_1950	symptom_1960	symptom_1970	
+symptom_1950	symptom_1960	symptom_1970	symptom_1940	symptom_1930	symptom_1940	
+symptom_1960	symptom_1940	symptom_1960	symptom_1920	symptom_1940	symptom_1960	
+symptom_1940	symptom_1970	symptom_1930	symptom_1960	symptom_1970	symptom_1930	
+symptom_1970	symptom_1950	symptom_1950	symptom_1970	symptom_1920	symptom_1950	
+symptom_1930	symptom_1920	symptom_1920	symptom_1930	symptom_1950	symptom_1920	
+dementia	psychosis	psychosis	dementia	symptomatic	symptomatic	
+psychosis	dementia	dementia	psychosis	manifestation	maladjustment	
+manifestation	malady	symptomatic	maladjustment	psychosis	psychosis	
+symptomatic	neurosis	maladjustment	neurosis	dementia	dementia	
+
+tank_1920	tank_1930	tank_1940	tank_1950	tank_1960	tank_1970	
+tank_1930	tank_1950	tanks	tank_1940	tank_1950	tank_1960	
+tank_1960	tank_1960	tank_1950	tank_1960	tank_1970	tank_1950	
+tank_1950	tank_1940	tank_1930	tanks	tank_1930	tank_1930	
+petrol	tank_1970	armored	tank_1970	tank_1940	tank_1940	
+ay	tank_1920	tank_1960	tank_1930	tanks	tanks	
+tank_1940	gas	tank_1970	tank_1920	tank_1920	tank_1920	
+tank_1970	cistern	motorized	fuselage	nozzle	carburetor	
+cistern	tanks	infantry	nozzle	fuselage	pump	
+gasoline	gasoline	jeeps	carburetor	cistern	bulldozer	
+
+tape_1920	tape_1930	tape_1940	tape_1950	tape_1960	tape_1970	
+tape_1930	tape_1920	tape_1930	tape_1960	tape_1950	tape_1960	
+tape_1940	tape_1940	tape_1950	tape_1940	tape_1970	tape_1950	
+tape_1950	tape_1950	tape_1920	tape_1970	recorders	recorder	
+adhesive	tape_1960	tape_1960	tape_1930	tape_1930	tapes	
+tape_1960	adhesive	adhesive	tape_1920	tapes	recordings	
+ribbon	twine	ribbon	recorders	recorder	stereo	
+bandanna	ticker	tape_1970	recorder	tape_1940	taped	
+weft	paper_1950	braid	tapes	taped	recorders	
+braid	gauze	cord	adhesive	stereo	recording	
+
+telephone_1920	telephone_1930	telephone_1940	telephone_1950	telephone_1960	telephone_1970	
+telephone_1930	telephone_1920	telephone_1950	telephone_1970	telephone_1970	telephone_1960	
+telephone_1940	telephone_1950	telephone_1930	telephone_1940	telephone_1950	telephone_1950	
+telephone_1950	telephone_1940	telephone_1960	telephone_1960	telephone_1940	phone_1970	
+telephone_1970	telephone_1960	telephone_1970	telephone_1930	phone_1970	telephone_1940	
+telephone_1960	telephone_1970	telephone_1920	telephone_1920	telephone_1930	telephone_1930	
+phone_1920	phone_1940	phone_1970	phone_1970	phone_1960	phone_1960	
+telegraph	phone_1930	phone_1940	phone_1960	telephone_1920	telephone_1920	
+phone_1940	phone_1920	phone_1960	phone_1950	phone_1940	phone_1950	
+phone_1950	phone_1950	phone_1950	phone_1940	phone_1950	phone_1940	
+
+train_1920	train_1930	train_1940	train_1950	train_1960	train_1970	
+train_1930	train_1920	train_1950	train_1940	train_1950	train_1950	
+train_1940	train_1940	train_1920	train_1960	train_1970	train_1940	
+train_1950	train_1950	train_1930	train_1970	train_1940	train_1960	
+train_1970	train_1970	train_1970	train_1930	train_1930	train_1930	
+train_1960	train_1960	train_1960	train_1920	train_1920	train_1920	
+trains	trains	trains	trains	bus	bus	
+car_1920	car_1920	bus	bus	trains	trains	
+steamer	tram	tram	tram	tram	tram	
+tram	bus	westbound	westbound	westbound	trolley	
+
+travel_1920	travel_1930	travel_1940	travel_1950	travel_1960	travel_1970	
+travel_1930	travel_1940	travel_1930	travel_1960	travel_1970	travel_1960	
+travel_1940	travel_1920	travel_1950	travel_1940	travel_1950	travel_1940	
+travel_1950	travel_1950	travel_1970	travel_1970	travel_1940	travel_1950	
+travel_1960	travel_1960	travel_1960	travel_1930	travel_1930	travel_1930	
+travel_1970	travel_1970	travel_1920	travel_1920	travel_1920	travel_1920	
+traveling	traveling	traveling	traveling	traveling	traveling	
+travelling	travelling	travelling	travelling	travelling	trips	
+journey	traveled	traveled	trips	traveled	travelling	
+traveled	journey	transport	round-trip	travels	round-trip	
+
