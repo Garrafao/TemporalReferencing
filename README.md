@@ -4,7 +4,7 @@ Data and code for the experiments in
 
 - Haim Dubossarsky, Simon Hengchen, Nina Tahmasebi and Dominik Schlechtweg. 2019. Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change. In *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, Florence, Italy. Association for Computational Linguistics.
 
-If you use this software for academic research, [please cite the paper above)](#bibtex) and make sure you give appropriate credit to the below-mentioned software this repository strongly depends on.
+If you use this software for academic research, [please cite the paper above](#bibtex) and make sure you give appropriate credit to the below-mentioned software this repository strongly depends on.
 
 The code heavily relies on [DISSECT](http://clic.cimec.unitn.it/composes/toolkit/introduction.html) (modules/composes). For aligning embeddings (SGNS) we used [VecMap](https://github.com/artetxem/vecmap) (alignment/map_embeddings). For alignment of the PPMI matrices and measuring cosine distance we relied on code from [LSCDetection](https://github.com/Garrafao/LSCDetection). We used [hyperwords](https://bitbucket.org/omerlevy/hyperwords) for training SGNS and PPMI on the extracted word-context pairs.
 
