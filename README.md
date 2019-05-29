@@ -15,7 +15,7 @@ The scripts should be run directly from the main directory. If you wish to do ot
 
 	python corpus_processing/extract-pairs.py <windowSize> <corpDir> <outDir> <lowerBound> <upperBound> <testset> <freqset> <minfreq>
 
-We recommend you to run the scripts with the Python Anaconda distribution (Python 2.7.15), only for VecMap Python 3 is needed. You will have to install some additional packages such as: docopt, gensim, i.a. Those that aren't available from the Anaconda installer can be installed via EasyInstall.
+We recommend you to run the scripts with the Python Anaconda distribution (Python 2.7.15), only for VecMap Python 3 is needed. You will have to install some additional packages such as: docopt, gensim, i.a. Those that aren't available from the Anaconda installer can be installed via EasyInstall, or by running `pip install -r requirements.txt`. 
 
 ### Pipeline
 
