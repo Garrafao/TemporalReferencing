@@ -6,7 +6,7 @@ Data and code for the experiments in
 
 If you use this software for academic research, [please cite the paper above](#bibtex) and make sure you give appropriate credit to the below-mentioned software this repository strongly depends on.
 
-The code heavily relies on [DISSECT](http://clic.cimec.unitn.it/composes/toolkit/introduction.html) (modules/composes). For aligning embeddings (SGNS/SVD/RI) we used [VecMap](https://github.com/artetxem/vecmap) (alignment/map_embeddings). For alignment of the PPMI matrices and measuring cosine distance we relied on code from [LSCDetection](https://github.com/Garrafao/LSCDetection). We used [hyperwords](https://bitbucket.org/omerlevy/hyperwords) for training SGNS and PPMI on the extracted word-context pairs.
+The code heavily relies on [DISSECT](http://clic.cimec.unitn.it/composes/toolkit/introduction.html) (modules/composes). For aligning embeddings (SGNS) we used [VecMap](https://github.com/artetxem/vecmap) (alignment/map_embeddings). For alignment of the PPMI matrices and measuring cosine distance we relied on code from [LSCDetection](https://github.com/Garrafao/LSCDetection). We used [hyperwords](https://bitbucket.org/omerlevy/hyperwords) for training SGNS and PPMI on the extracted word-context pairs.
 
 Usage Note
 --------
@@ -34,7 +34,7 @@ Make sure matrices/ is empty each time you run it. You can take a look at the co
 It then extracts
 
 1. **regular word-context pairs** for each time bin (for alignment) and
-2. **temporarily referenced word-context pairs** for specified target words (target\_year)
+2. **temporally referenced word-context pairs** for specified target words (target\_year)
 
 with corpus_processing/extract-pairs.py. Then it creates basic matrices for PPMI and SGNS using the scripts under hyperwords/ and aligns the time-binned matrices with the scripts under alignment/. Finally, it extracts cosine distances (displacement) for each pair of adjacent time bins and nearest neighbors for each time bin to results/ using the scripts under measures/. The script measures/displacement.py needs a different input for each model: for the alignment models it takes the file testsets/test/testset-pairs.csv in the following format:
 
