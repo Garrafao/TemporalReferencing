@@ -19,7 +19,7 @@ We recommend you to run the scripts with the Python Anaconda distribution (Pytho
 
 ### Pipeline
 
-In scripts/run_test.sh you find an example of a full pipeline for the models on a small test corpus. Assuming you are working on a UNIX-based system, first make the script executable with
+In `scripts/run_test.sh` you find an example of a full pipeline for the models on a small test corpus. Assuming you are working on a UNIX-based system, first make the script executable with
 
 	chmod 755 scripts/run_test.sh
 
@@ -27,7 +27,7 @@ Then run it with
 
 	bash -e scripts/run_test.sh
 
-Make sure matrices/ is empty each time you run it. You can take a look at the code to understand how it makes use of the different scripts in the repository. It first reads the gzipped test corpus in corpora/test/testcorpus.gz containing many duplicate sentences for the time bins 1920, 1930 and 1940 with each line in the following format:
+Make sure `matrices/` is empty each time you run it. You can take a look at the code to understand how it makes use of the different scripts in the repository. It first reads the gzipped test corpus in `corpora/test/testcorpus.gz` containing many duplicate sentences for the time bins 1920, 1930 and 1940 with each line in the following format:
 
 	year [tab] word1 word2 word3...
 
@@ -36,12 +36,12 @@ It then extracts
 1. **regular word-context pairs** for each time bin (for alignment) and
 2. **temporally referenced word-context pairs** for specified target words (target\_year)
 
-with corpus_processing/extract-pairs.py. Then it creates basic matrices for PPMI and SGNS using the scripts under hyperwords/ and aligns the time-binned matrices with the scripts under alignment/. Finally, it extracts cosine distances (displacement) for each pair of adjacent time bins and nearest neighbors for each time bin to results/ using the scripts under measures/. The script measures/displacement.py needs a different input for each model: for the alignment models it takes the file testsets/test/testset-pairs.csv in the following format:
+with `corpus_processing/extract-pairs.py`. Then it creates basic matrices for PPMI and SGNS using the scripts under `hyperwords/` and aligns the time-binned matrices with the scripts under `alignment/`. Finally, it extracts cosine distances (displacement) for each pair of adjacent time bins and nearest neighbors for each time bin to `results/` using the scripts under `measures/`. The script `measures/displacement.py` needs a different input for each model: for the alignment models it takes the file `testsets/test/testset-pairs.csv` in the following format:
 
 	target1 [tab] target1
 	target2 [tab] target2
 
-For Temporal Referencing it takes the files testsets/test/testset-1920-1930-pairs.csv and testsets/test/testset-1930-1940-pairs.csv as input with the following respective formats:
+For Temporal Referencing it takes the files `testsets/test/testset-1920-1930-pairs.csv` and `testsets/test/testset-1930-1940-pairs.csv` as input with the following respective formats:
 
 	target1_year1 [tab] target1_year2
 	target2_year1 [tab] target2_year2
@@ -55,7 +55,7 @@ and
 Data
 --------
 
-Under data/ we give a spreadsheet with experimental results on the [Word Sense Change testset](https://zenodo.org/record/495572) and lists of the nearest neighbors for the test words found by the different models when trained on [COHA](https://www.english-corpora.org/coha/) (1920-1970).
+Under `data/` we give a spreadsheet with experimental results on the [Word Sense Change testset](https://zenodo.org/record/495572) and lists of the nearest neighbors for the test words found by the different models when trained on [COHA](https://www.english-corpora.org/coha/) (1920-1970).
 
 BibTex
 --------
