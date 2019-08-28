@@ -67,7 +67,7 @@ done
 declare -a sgnsfiles=(matrices/$corpusshort*/vectors.txt)
 for sgnsfile in "${sgnsfiles[@]}"
 do
-    python -u space_creation/convert_matrix_txt2w2v.py "${sgnsfile%.*}" "${sgnsfile%.*}"
+    python space_creation/convert_matrix_txt2w2v.py "${sgnsfile%.*}" "${sgnsfile%.*}"
     rm $sgnsfile
 done
 
@@ -77,7 +77,7 @@ done
 declare -a epmifiles=(matrices/$corpusshort*/pmi.npz)
 for epmifile in "${epmifiles[@]}"
 do
-    python -u space_creation/transform_matrix_epmi2sppmi.py "${epmifile%.*}" $(dirname "$epmifile")/ 5
+    python space_creation/transform_matrix_epmi2sppmi.py "${epmifile%.*}" $(dirname "$epmifile")/ 5
     rm $epmifile
 done
 
@@ -108,16 +108,16 @@ do
 	if [[ ! $dirname1 =~ "_tr-" ]] && [[ ! $dirname2 =~ "_tr-" ]] && [ $d == $step ];
 	then
 	    
-	    python3 -u alignment/map_embeddings.py --normalize unit center --init_identical --orthogonal $file2 $file1 $outfolder/target_"${dirname2}"_map_to_"${dirname1}".w2v $outfolder/source_"${dirname2}"_map_to_"${dirname1}".w2v
+	    python3 alignment/map_embeddings.py --normalize unit center --init_identical --orthogonal $file2 $file1 $outfolder/target_"${dirname2}"_map_to_"${dirname1}".w2v $outfolder/source_"${dirname2}"_map_to_"${dirname1}".w2v
 
 	    # Make results
-	    python2 -u measures/displacement.py -b -o $outfolder/source_"${dirname2}"_map_to_"${dirname1}" $outfolder/target_"${dirname2}"_map_to_"${dirname1}" $resultfolder/align/$(basename "$testset")-$year2-$year1-sgns-align $testset # displacement
+	    python measures/displacement.py -b -o $outfolder/source_"${dirname2}"_map_to_"${dirname1}" $outfolder/target_"${dirname2}"_map_to_"${dirname1}" $resultfolder/align/$(basename "$testset")-$year2-$year1-sgns-align $testset # displacement
 	    
-	    python2 -u measures/knn.py "${file1%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year1-sgns-align $testset 0 # knn
+	    python measures/knn.py "${file1%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year1-sgns-align $testset 0 # knn
 
 	    if [ $year2 == $lastbound ];
 	    then
-		python2 -u measures/knn.py "${file2%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year2-sgns-align $testset 0 # knn		
+		python measures/knn.py "${file2%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year2-sgns-align $testset 0 # knn		
 	    fi	
 	fi	
     done
@@ -139,15 +139,15 @@ do
 	then
 	    
 	    # PPMI alignment	
-	    python2 -u alignment/count_alignment_intersect.py $outfolder/source_$dirname2\_intsct_$dirname1 $outfolder/target_$dirname2\_intsct_$dirname1 "${file2%.*}" "${file1%.*}" # align PPMI matrices
+	    python alignment/count_alignment_intersect.py $outfolder/source_$dirname2\_intsct_$dirname1 $outfolder/target_$dirname2\_intsct_$dirname1 "${file2%.*}" "${file1%.*}" # align PPMI matrices
 	    # Make results
-	    python2 -u measures/displacement.py -b -o $outfolder/source_$dirname2\_intsct_$dirname1.sm $outfolder/target_$dirname2\_intsct_$dirname1.sm $resultfolder/align/$(basename "$testset")-$year2-$year1-ppmi-align $testset # displacement
+	    python measures/displacement.py -b -o $outfolder/source_$dirname2\_intsct_$dirname1.sm $outfolder/target_$dirname2\_intsct_$dirname1.sm $resultfolder/align/$(basename "$testset")-$year2-$year1-ppmi-align $testset # displacement
 
-	    python2 -u measures/knn.py "${file1%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year1-ppmi-align $testset 0 # knn
+	    python measures/knn.py "${file1%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year1-ppmi-align $testset 0 # knn
 	    
 	    if [ $year2 == $lastbound ];
 	    then
-		python2 -u measures/knn.py "${file2%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year2-ppmi-align $testset 0 # knn		
+		python measures/knn.py "${file2%.*}" 20 $resultfolder/align/knn/knn-$corpusshort-$year2-ppmi-align $testset 0 # knn		
 	    fi
 	fi		    
     done
@@ -174,13 +174,13 @@ do
 	    declare -a suffix=sgns
 	fi
         
-	python2 -u measures/displacement.py -b -o $trfile $trfile $resultfolder/tr/$(basename "$testset")-$year2-$year1-$suffix-tr $trtestset # displacement
+	python measures/displacement.py -b -o $trfile $trfile $resultfolder/tr/$(basename "$testset")-$year2-$year1-$suffix-tr $trtestset # displacement
 	
-	python2 -u measures/knn.py $trfile 20 $resultfolder/tr/knn/knn-$corpusshort-$year1-$suffix-tr $trtestset 0 # knn
+	python measures/knn.py $trfile 20 $resultfolder/tr/knn/knn-$corpusshort-$year1-$suffix-tr $trtestset 0 # knn
 
 	if [ $year2 == $lastbound ];
 	then
-	    python2 -u measures/knn.py $trfile 20 $resultfolder/tr/knn/knn-$corpusshort-$year2-$suffix-tr $trtestset 1 # knn		
+	    python measures/knn.py $trfile 20 $resultfolder/tr/knn/knn-$corpusshort-$year2-$suffix-tr $trtestset 1 # knn		
 	fi
 	
     done
