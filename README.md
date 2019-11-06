@@ -2,7 +2,7 @@
 
 Data and code for the experiments in 
 
-- Haim Dubossarsky, Simon Hengchen, Nina Tahmasebi and Dominik Schlechtweg. 2019. Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change. In *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, Florence, Italy. Association for Computational Linguistics.
+- Haim Dubossarsky, Simon Hengchen, Nina Tahmasebi and Dominik Schlechtweg. 2019. [Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change](https://www.aclweb.org/anthology/P19-1044/). In *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, Florence, Italy. Association for Computational Linguistics.
 
 If you use this software for academic research, [please cite the paper above](#bibtex) and make sure you give appropriate credit to the below-mentioned software this repository strongly depends on.
 

@@ -20,12 +20,12 @@ declare -a dummytestset=testsets/test/dummy_testset.csv # a dummy testset contai
 for bound in "${bounds[@]}"
 do
     mkdir --parents matrices/$corpusshort-$bound
-    python -u corpus_processing/extract-pairs.py $win $corpus matrices/$corpusshort-$bound $bound $bound $dummytestset $freqfile $freqthr
+    python corpus_processing/extract-pairs.py $win $corpus matrices/$corpusshort-$bound $bound $bound $dummytestset $freqfile $freqthr
 done
 
 # TEMPORAL REFERENCING
 mkdir --parents matrices/$corpusshort\_tr-$firstbound-$lastbound
-python -u corpus_processing/extract-pairs.py $win $corpus matrices/$corpusshort\_tr-$firstbound-$lastbound $firstbound $lastbound $testset $freqfile $freqthr
+python corpus_processing/extract-pairs.py $win $corpus matrices/$corpusshort\_tr-$firstbound-$lastbound $firstbound $lastbound $testset $freqfile $freqthr
 
 
 ### RUN SGNS, EPMI ###

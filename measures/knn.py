@@ -63,7 +63,7 @@ def main():
             neighbors1 = space1.get_neighbours(t1.encode('utf8'), k, CosSimilarity())
             del neighbors1[0]
         except KeyError:
-            neighbors1 = ('nan','')
+            neighbors1 = [('nan',float('nan'))]
             
         target2neighbors[t1] = neighbors1
                
