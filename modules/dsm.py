@@ -97,136 +97,15 @@ def load_pkl_files(dsm_prefix):
         return Space(cooccurrence_matrix, id2row, id2column, row2id=row2id, column2id=column2id)
 
     if os.path.isfile(dsm_prefix + '.tsv'):
-        values = np.loadtxt(dsm_prefix + '.tsv', dtype=float, delimiter='\t', skiprows=0, comments='', encoding='utf-8')
-        targets = np.loadtxt(dsm_prefix + '.rows', dtype=str, skiprows=0, comments='', encoding='utf-8')
+        values = np.loadtxt(dsm_prefix + '.tsv', dtype=float, delimiter='\t', skiprows=0, comments=None, encoding='utf-8')
+        targets = np.loadtxt(dsm_prefix + '.rows', dtype=str, skiprows=0, comments=None, encoding='utf-8')
         # Convert to space in sparse matrix format        
         return Space(SparseMatrix(values), list(targets), [])
     
     # If everything fails try to load it as single w2v file
-    space_array = np.loadtxt(dsm_prefix + '.w2v', dtype=object, delimiter=' ', skiprows=1, comments='', encoding='utf-8')
+    space_array = np.loadtxt(dsm_prefix + '.w2v', dtype=object, delimiter=' ', skiprows=1, comments=None, encoding='utf-8')
     targets = space_array[:,0].flatten()
     values = space_array[:,1:].astype(np.float)
     # Convert to space and sparse matrix format        
     return Space(SparseMatrix(values), list(targets), [])
-
-    
-class PathLineSentences_mod(object):
-    """
-    Simple format: date\tsentence = one line; words already preprocessed and separated by whitespace.
-    Like LineSentence, but will process all files in a directory in alphabetical order by filename
-    """
-
-    def __init__(self, source, max_sentence_length=MAX_WORDS_IN_BATCH, limit=None, lowerBound=-9999, upperBound=9999):
-        """
-        `source` should be a path to a directory (as a string) where all files can be opened by the
-        LineSentence class. Each file will be read up to
-        `limit` lines (or no clipped if limit is None, the default).
-
-        Example::
-
-            sentences = LineSentencePath_mod(os.getcwd() + '\\corpus\\')
-
-        The files in the directory should be either text files, .bz2 files, or .gz files.
-
-        """
-        self.source = source
-        self.max_sentence_length = max_sentence_length
-        self.limit = limit
-        self.lowerBound = lowerBound
-        self.upperBound = upperBound
-        self.corpusSize = 0
-        
-
-        if os.path.isfile(self.source):
-            logging.warning('single file read, better to use models.word2vec.LineSentence')
-            self.input_files = [self.source]  # force code compatibility with list of files
-        elif os.path.isdir(self.source):
-            self.source = os.path.join(self.source, '')  # ensures os-specific slash at end of path
-            logging.debug('reading directory ' + self.source)
-            self.input_files = os.listdir(self.source)
-            self.input_files = [self.source + file for file in self.input_files]  # make full paths
-            self.input_files.sort()  # makes sure it happens in filename order
-        else:  # not a file or a directory, then we can't do anything with it
-            raise ValueError('input is neither a file nor a path')
-        
-        logging.info('files read into PathLineSentences_mod:' + '\n'.join(self.input_files))
-
-    def __iter__(self):
-        '''iterate through the files'''
-        for file_name in self.input_files:
-            if '.DS_Store' in file_name:
-                continue
-            logging.info('reading file ' + file_name)           
-            with utils.smart_open(file_name) as fin:
-                for line in itertools.islice(fin, self.limit):
-                    lineSplit = line.split("\t")
-                    date, line = int(lineSplit[0]), utils.to_unicode(lineSplit[1]).split() # Get date and sentence
-                    if not self.lowerBound <= date <= self.upperBound: # skip every sentence which is not in timeframe
-                        continue
-                    self.corpusSize+=len(line)
-                    i = 0
-                    while i < len(line):
-                        yield line[i:i + self.max_sentence_length]
-                        i += self.max_sentence_length
-
-
-
-class PathLineSentences_mod2(object):
-    """
-    Simple format: date\tsentence = one line; words already preprocessed and separated by whitespace.
-    Like LineSentence, but will process all files in a directory in alphabetical order by filename
-    """
-
-    def __init__(self, source, max_sentence_length=MAX_WORDS_IN_BATCH, limit=None, lowerBound=-9999, upperBound=9999):
-        """
-        `source` should be a path to a directory (as a string) where all files can be opened by the
-        LineSentence class. Each file will be read up to
-        `limit` lines (or no clipped if limit is None, the default).
-
-        Example::
-
-            sentences = LineSentencePath_mod(os.getcwd() + '\\corpus\\')
-
-        The files in the directory should be either text files, .bz2 files, or .gz files.
-
-        """
-        self.source = source
-        self.max_sentence_length = max_sentence_length
-        self.limit = limit
-        self.lowerBound = lowerBound
-        self.upperBound = upperBound
-        self.corpusSize = 0
-        
-
-        if os.path.isfile(self.source):
-            logging.warning('single file read, better to use models.word2vec.LineSentence')
-            self.input_files = [self.source]  # force code compatibility with list of files
-        elif os.path.isdir(self.source):
-            self.source = os.path.join(self.source, '')  # ensures os-specific slash at end of path
-            logging.debug('reading directory ' + self.source)
-            self.input_files = os.listdir(self.source)
-            self.input_files = [self.source + file for file in self.input_files]  # make full paths
-            self.input_files.sort()  # makes sure it happens in filename order
-        else:  # not a file or a directory, then we can't do anything with it
-            raise ValueError('input is neither a file nor a path')
-        
-        logging.info('files read into PathLineSentences_mod:' + '\n'.join(self.input_files))
-
-    def __iter__(self):
-        '''iterate through the files'''
-        for file_name in self.input_files:
-            if '.DS_Store' in file_name:
-                continue
-            logging.info('reading file ' + file_name)
-            with utils.smart_open(file_name) as fin:
-                for line in itertools.islice(fin, self.limit):
-                    lineSplit = line.split("\t")
-                    date, line = int(lineSplit[0]), utils.to_unicode(lineSplit[1]).split() # Get date and sentence
-                    if not self.lowerBound <= date <= self.upperBound: # skip every sentence which is not in timeframe
-                        continue
-                    self.corpusSize+=len(line)
-                    i = 0
-                    while i < len(line):
-                        yield (date, line[i:i + self.max_sentence_length])
-                        i += self.max_sentence_length
 

@@ -21,7 +21,7 @@ def main():
     args = docopt("""Compute cosine distance for target pairs from two vector spaces.
 
     Usage:
-        displacement.py [-b] [-o] <spacePrefix1> <spacePrefix2> <outPath> [<testset>]
+        cd.py [-b] [-o] <spacePrefix1> <spacePrefix2> <outPath> [<testset>]
 
         <spacePrefix1> = path to pickled space without suffix
         <spacePrefix2> = path to pickled space without suffix

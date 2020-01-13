@@ -19,12 +19,12 @@ def main():
     args = docopt('''Align two sparse matrices by intersecting their columns.
 
     Usage:
-        count_alignment_intersect.py [-l] <outPath1> <outPath2> <spacePrefix1> <spacePrefix2>
+        ci.py [-l] <spacePrefix1> <spacePrefix2> <outPath1> <outPath2>
 
-        <outPath1> = output path for aligned space 1
-        <outPath2> = output path for aligned space 2
         <spacePrefix1> = path to pickled space1 without suffix
         <spacePrefix2> = path to pickled space2 without suffix
+        <outPath1> = output path for aligned space 1
+        <outPath2> = output path for aligned space 2
 
     Options:
         -l, --len   normalize final vectors to unit length

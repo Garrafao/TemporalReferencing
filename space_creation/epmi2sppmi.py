@@ -25,7 +25,7 @@ def main():
     args = docopt('''Transform EPMI matrix in npz format to SPPMI space and save as pickle file.
 
     Usage:
-        transform_matrix_epmi2sppmi.py <spacePrefix> <outPath> <k>
+        epmi2sppmi.py <spacePrefix> <outPath> <k>
 
         <spacePrefix> = path to npz without suffix
         <outPath> = output path for space
@@ -71,7 +71,7 @@ def main():
     #print sparseSpace.get_cooccurrence_matrix()
 
     # Save the Space object in pickle format
-    save_pkl_files(sparseSpace, outPath + 'ppmi.sm', save_in_one_file=True)
+    save_pkl_files(sparseSpace, outPath, save_in_one_file=True)
     
     logging.info("--- %s seconds ---" % (time.time() - start_time))                   
 

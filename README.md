@@ -8,48 +8,61 @@ If you use this software for academic research, [please cite the paper above](#b
 
 The code heavily relies on [DISSECT](http://clic.cimec.unitn.it/composes/toolkit/introduction.html) (modules/composes). For aligning embeddings (SGNS) we used [VecMap](https://github.com/artetxem/vecmap) (alignment/map_embeddings). For alignment of the PPMI matrices and measuring cosine distance we relied on code from [LSCDetection](https://github.com/Garrafao/LSCDetection). We used [hyperwords](https://bitbucket.org/omerlevy/hyperwords) for training SGNS and PPMI on the extracted word-context pairs.
 
-Usage Note
+Usage
 --------
 
 The scripts should be run directly from the main directory. If you wish to do otherwise, you may have to change the path you add to the path attribute in `sys.path.append('./modules/')` in the scripts. All scripts can be run directly from the command line, e.g.:
 
-	python corpus_processing/extract-pairs.py <windowSize> <corpDir> <outDir> <lowerBound> <upperBound> <testset> <freqset> <minfreq>
+	python2 corpus_processing/extract_pairs.py <corpDir> <outPath> <windowSize> <lowerBound> <upperBound> <vocabset>
 
-We recommend you to run the scripts with Python 2.7.15, only for VecMap Python 3 is needed. You will have to install some additional packages such as: docopt, gensim, i.a. Those that aren't available from the Anaconda installer can be installed via EasyInstall, or by running `pip install -r requirements.txt`. 
+We recommend to run the scripts with Python 2.7.15, only for VecMap Python 3 is needed. You will have to install some additional packages such as: docopt, gensim, i.a. Those that aren't available from the Anaconda installer can be installed via EasyInstall, or by running `pip install -r requirements.txt`.
 
-### Pipeline
 
-In `scripts/run_test.sh` you find an example of a full pipeline for the models on a small test corpus. Assuming you are working on a UNIX-based system, first make the script executable with
+Pipelines
+--------
 
-	chmod 755 scripts/run_test.sh
+Under `scripts/` we provide full pipelines running the models on a small test corpus. Assuming you are working on a UNIX-based system, first make the scripts executable with
 
-Then run it with
+	chmod 755 scripts/*.sh
 
-	bash -e scripts/run_test.sh
+Then run them with
 
-Make sure `matrices/` is empty each time you run it. You can take a look at the code to understand how it makes use of the different scripts in the repository. It first reads the gzipped test corpus in `corpora/test/testcorpus.gz` containing many duplicate sentences for the time bins 1920, 1930 and 1940 with each line in the following format:
+	bash -e scripts/run_tr_sgns.sh
+	bash -e scripts/run_tr_ppmi.sh
+
+	bash -e scripts/run_bin_sgns.sh
+	bash -e scripts/run_bin_ppmi.sh
+
+### TR
+
+The Temporal Referencing pipelines for SGNS/PPMI run through the following steps:
+
+1. get vocabulary from corpus (`corpus_processing/make_vocab.py`)
+2. extract **temporally referenced word-context pairs** (_word\_year_) for specified target words  (`corpus_processing/extract_pairs.py`)
+3. learn one TR matrix for all bins (`hyperwords/`)
+4. extract matrix for each bin from TR matrix (`space_creation/tr2bin.py`)
+5. extract cosine distances for each pair of adjacent time bins ( `measures/cd.py`)
+6. extract nearest neighbors for each time bin ( `measures/knn.py`)
+
+
+### Bins
+
+The bin pipelines run through the following steps:
+
+1. get vocabulary from corpus (`corpus_processing/make_vocab.py`)
+2. extract **regular word-context pairs** for each time bin (`corpus_processing/extract_pairs.py`)
+3. learn matrix for each bin (`hyperwords/`)
+4. align matrices for each pair of adjacent time bins (`alignment/`)
+5. extract cosine distances from aligned matrix pairs ( `measures/cd.py`)
+6. extract nearest neighbors for each time bin ( `measures/knn.py`)
+
+
+Corpus
+--------
+
+Under `corpus/test/files/` we provide a small test corpus contains many duplicate sentences for the time bins 1920, 1930 and 1940 with each line in the following format:
 
 	year [tab] word1 word2 word3...
-
-It then extracts
-
-1. **regular word-context pairs** for each time bin (for alignment) and
-2. **temporally referenced word-context pairs** for specified target words (target\_year)
-
-with `corpus_processing/extract-pairs.py`. Then it creates basic matrices for PPMI and SGNS using the scripts under `hyperwords/` and aligns the time-binned matrices with the scripts under `alignment/`. Finally, it extracts cosine distances (displacement) for each pair of adjacent time bins and nearest neighbors for each time bin to `results/` using the scripts under `measures/`. The script `measures/displacement.py` needs a different input for each model: for the alignment models it takes the file `testsets/test/testset-pairs.csv` in the following format:
-
-	target1 [tab] target1
-	target2 [tab] target2
-
-For Temporal Referencing it takes the files `testsets/test/testset-1920-1930-pairs.csv` and `testsets/test/testset-1930-1940-pairs.csv` as input with the following respective formats:
-
-	target1_year1 [tab] target1_year2
-	target2_year1 [tab] target2_year2
-
-and
-
-	target1_year2 [tab] target1_year3
-	target2_year2 [tab] target2_year3
 
 
 Data
@@ -62,11 +75,12 @@ BibTex
 
 ```
 @inproceedings{Dubossarskyetal19,
-title = {{Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change}},
-author = {Dubossarsky, Haim and Hengchen, Simon and Tahmasebi, Nina and Schlechtweg, Dominik},
-    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    year = "2019",
-    address = "Florence, Italy",
-    publisher = "Association for Computational Linguistics"
+	title = {Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change},
+	author = {Haim Dubossarsky and Simon Hengchen and Nina Tahmasebi and Dominik Schlechtweg},
+    booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+    year = {2019},
+    address = {Florence, Italy},
+    publisher = {Association for Computational Linguistics},
+	pages = {457--470}
 }
 ```

@@ -38,14 +38,12 @@ def main():
     logging.info(__file__.upper())
     start_time = time.time()    
 
-    space_array = np.loadtxt(spacePrefix + '.txt', dtype=object, delimiter=' ', skiprows=0, comments='', encoding='utf-8')
+    space_array = np.loadtxt(spacePrefix + '.txt', dtype=object, delimiter=' ', skiprows=0, comments=None, encoding='utf-8')
     targets = space_array[:,0].flatten()
     values = space_array[:,1:].astype(np.float)
     # Create new space
     sparseSpace = Space(DenseMatrix(coo_matrix(values)), list(targets), [])
     
-    #print sparseSpace.get_row('wood').get_mat().toarray()[0].tolist()[id2column.index('inexhaustible')]
-
     # Save the Space object in pickle format
     save_pkl_files(sparseSpace, outPath, save_in_one_file=True, save_as_w2v=True)
     

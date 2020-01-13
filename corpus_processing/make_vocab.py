@@ -4,7 +4,7 @@ sys.path.append('./modules/')
 import codecs
 from collections import defaultdict
 import os
-from dsm import PathLineSentences_mod
+from gensim.models.word2vec import PathLineSentences
 from docopt import docopt
 import logging
 import time
@@ -12,14 +12,14 @@ import time
 
 def main():
     """
-    Get frequencies from corpus.
+    Make vocabulary from corpus.
     """
 
     # Get the arguments
-    args = docopt("""Get frequencies from corpus.
+    args = docopt("""Make vocabulary from corpus.
 
     Usage:
-        get_freqs.py <corpDir> <outPath> <lowerBound> <upperBound>
+        make_vocab.py <corpDir> <outPath> <lowerBound> <upperBound> <minfreq>
         
     Arguments:
        
@@ -27,6 +27,7 @@ def main():
         <outPath> = output path for result file
         <lowerBound> = lower bound for time period
         <upperBound> = upper bound for time period
+        <minfreq> = minimum frequency threshold
 
     """)
     
@@ -34,6 +35,7 @@ def main():
     outPath = args['<outPath>']        
     lowerBound = int(args['<lowerBound>'])
     upperBound = int(args['<upperBound>'])
+    minfreq = float(args['<minfreq>'])
 
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     logging.info(__file__.upper())
@@ -41,21 +43,20 @@ def main():
              
     freqs = defaultdict(int)      
 
-    sentences = PathLineSentences_mod(corpDir, lowerBound=lowerBound, upperBound=upperBound)
-
-    for sentence in sentences:
+    data = PathLineSentences(corpDir)
+    
+    for line in data:
+        date, sentence = int(line[:1][0]), line[1:]
+        if not lowerBound <= date <= upperBound:
+            continue
         for word in sentence:
-            freqs[word.lower()] = freqs[word.lower()] + 1
+            freqs[word] = freqs[word] + 1
                        
-    # Rank the lemmas
-    freqs_ranked = sorted(freqs, key=lambda x: -(freqs[x]))
-
-    with codecs.open(outPath + '.csv', 'w', 'utf-8') as f_out:
-        for word in freqs_ranked:
-            print >> f_out, '\t'.join((word, str(float(freqs[word]))))
+    with codecs.open(outPath, 'w', 'utf-8') as f_out:
+        for word in freqs:
+            if freqs[word]>=minfreq:
+                f_out.write(word+'\n')
             
-    logging.info('total number of tokens: %d' % (sentences.corpusSize))
-    logging.info('total number of types: %d' % (len(freqs_ranked)))
     logging.info("--- %s seconds ---" % (time.time() - start_time))                   
     
 
