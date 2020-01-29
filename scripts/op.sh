@@ -14,6 +14,6 @@ do
     mkdir -p $outfolder/$bin1\_$bin2/$bin1
     mkdir -p $outfolder/$bin1\_$bin2/$bin2
     
-    python3 alignment/map_embeddings.py --normalize unit center --init_identical --orthogonal $matrixfolder/bins/$bin2/vectors.w2v $matrixfolder/bins/$bin1/vectors.w2v $outfolder/$bin1\_$bin2/$bin2/vectors.w2v $outfolder/$bin1\_$bin2/$bin1/vectors.w2v
+    python3 modules/vecmap/map_embeddings.py --normalize unit center --init_identical --orthogonal $matrixfolder/bins/$bin2/vectors.w2v $matrixfolder/bins/$bin1/vectors.w2v $outfolder/$bin1\_$bin2/$bin2/vectors.w2v $outfolder/$bin1\_$bin2/$bin1/vectors.w2v
 
 done

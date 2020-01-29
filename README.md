@@ -25,7 +25,11 @@ Under `scripts/` we provide full pipelines running the models on a small test co
 
 	chmod 755 scripts/*.sh
 
-Then run them with
+Then download DISSECT, VecMap and hyperwords with
+
+	bash -e scripts/get_packs.sh
+
+Then run the pipelines with
 
 	bash -e scripts/run_tr_sgns.sh
 	bash -e scripts/run_tr_ppmi.sh
@@ -39,7 +43,7 @@ The Temporal Referencing pipelines for SGNS/PPMI run through the following steps
 
 1. get vocabulary from corpus (`corpus_processing/make_vocab.py`)
 2. extract **temporally referenced word-context pairs** (_word\_year_) for specified target words  (`corpus_processing/extract_pairs.py`)
-3. learn one TR matrix for all bins (`hyperwords/`)
+3. learn one TR matrix for all bins (`modules/hyperwords/`)
 4. extract matrix for each bin from TR matrix (`space_creation/tr2bin.py`)
 5. extract cosine distances for each pair of adjacent time bins ( `measures/cd.py`)
 6. extract nearest neighbors for each time bin ( `measures/knn.py`)
@@ -51,8 +55,8 @@ The bin pipelines run through the following steps:
 
 1. get vocabulary from corpus (`corpus_processing/make_vocab.py`)
 2. extract **regular word-context pairs** for each time bin (`corpus_processing/extract_pairs.py`)
-3. learn matrix for each bin (`hyperwords/`)
-4. align matrices for each pair of adjacent time bins (`alignment/`)
+3. learn matrix for each bin (`modules/hyperwords/`)
+4. align matrices for each pair of adjacent time bins (`alignment/`, `modules/vecmap/`)
 5. extract cosine distances from aligned matrix pairs ( `measures/cd.py`)
 6. extract nearest neighbors for each time bin ( `measures/knn.py`)
 
@@ -77,10 +81,10 @@ BibTex
 @inproceedings{Dubossarskyetal19,
 	title = {Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change},
 	author = {Haim Dubossarsky and Simon Hengchen and Nina Tahmasebi and Dominik Schlechtweg},
-    booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
-    year = {2019},
-    address = {Florence, Italy},
-    publisher = {Association for Computational Linguistics},
+	booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+	year = {2019},
+	address = {Florence, Italy},
+	publisher = {Association for Computational Linguistics},
 	pages = {457--470}
 }
 ```
