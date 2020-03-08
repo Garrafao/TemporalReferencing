@@ -4,3 +4,7 @@ results
 update-git.sh
 scripts/old
 modules/old
+modules/composes
+modules/hyperwords
+modules/vecmap
+modules/dsm.pyc

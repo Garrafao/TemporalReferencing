@@ -52,8 +52,6 @@ def main():
     targets, indices = zip(*ti)
     
     new_matrix = matrix[list(indices), :]
-
-    new_space = Space(DenseMatrix(new_matrix), list(targets), id2column)
     
     # Save the Space objects
     if is_w2v:    
