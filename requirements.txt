@@ -1,3 +1,9 @@
 # packages to install:
 docopt==0.6.2
 gensim==3.7.3
+scipy==0.16.1
+numpy==1.16.6
+pathlib
+#parse
+#urlparse2
+smart_open==1.10.1

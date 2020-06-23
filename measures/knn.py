@@ -10,6 +10,7 @@ import numpy as np
 from scipy import spatial
 from composes.similarity.cos import CosSimilarity
 import logging
+import logging.config
 import time
 
             
