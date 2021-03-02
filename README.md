@@ -45,8 +45,8 @@ The Temporal Referencing pipelines for SGNS/PPMI run through the following steps
 2. extract **temporally referenced word-context pairs** (_word\_year_) for specified target words  (`corpus_processing/extract_pairs.py`)
 3. learn one TR matrix for all bins (`modules/hyperwords/`)
 4. extract matrix for each bin from TR matrix (`space_creation/tr2bin.py`)
-5. extract cosine distances for each pair of adjacent time bins ( `measures/cd.py`)
-6. extract nearest neighbors for each time bin ( `measures/knn.py`)
+5. extract cosine distances for each pair of adjacent time bins (`measures/cd.py`)
+6. extract nearest neighbors for each time bin (`measures/knn.py`)
 
 
 ### Bins
@@ -57,8 +57,8 @@ The bin pipelines run through the following steps:
 2. extract **regular word-context pairs** for each time bin (`corpus_processing/extract_pairs.py`)
 3. learn matrix for each bin (`modules/hyperwords/`)
 4. align matrices for each pair of adjacent time bins (`alignment/`, `modules/vecmap/`)
-5. extract cosine distances from aligned matrix pairs ( `measures/cd.py`)
-6. extract nearest neighbors for each time bin ( `measures/knn.py`)
+5. extract cosine distances from aligned matrix pairs (`measures/cd.py`)
+6. extract nearest neighbors for each time bin (`measures/knn.py`)
 
 
 Corpus

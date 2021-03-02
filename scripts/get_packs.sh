@@ -12,10 +12,10 @@ rm master.zip
 mv dissect-master/src/composes composes
 rm -r dissect-master
 
-wget https://bitbucket.org/omerlevy/hyperwords/get/f5a01ea3e44c.zip
-unzip f5a01ea3e44c.zip
-rm f5a01ea3e44c.zip
-mv omerlevy-hyperwords-f5a01ea3e44c hyperwords
+wget https://github.com/BIU-NLP/hyperwords/archive/master.zip
+unzip master.zip
+rm master.zip
+mv hyperwords-master hyperwords
 
 cd hyperwords
 chmod 755 *.sh
